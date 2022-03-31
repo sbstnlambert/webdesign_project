@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+/* PAGE D'ACCUEIL */
+.container {
+    width: 55%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    animation: animateItems 1s linear forwards;
+}
+
+@keyframes animateItems {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Texte d'accueil*/
+.welcome {
+    width: 60%;
+    display: flex;
+    margin: 10px auto;
+}
+
+.welcome h1 {
+    font-size: 400%;
+    /* line-height: 120%; */
+}
+
+.welcome #sebastienFont {
+    font-family: 'Sacramento', Helvetica, Arial, sans-serif;
+    font-size: 150%;
+    color: #E1A153;
+}
+
+.description {
+    width: 60%;
+    display: flex;
+    margin: 10px auto;
+    text-align: left;
+    /* line-height: 285%; */
+}
+
+.description h3 {
+    font-size: 25px;
+    font-weight: lighter;
+    color: #555555;
+}
+
+#highlight {
+    font-weight: bold;
+}
+
+/* Boutons (call-to-action) */
+.buttons {
+    width: 60%;
+    display: flex;
+    margin: 50px auto;
+    justify-content: space-between;
+}
+
+.buttons a {
+    display: flex;
+    font-size: 25px;
+    height: 85px;
+    width: 250px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.buttons a:hover {
+    -o-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.buttons #contactButton {
+    background-color: #E1A153;
+    color: white;
+}
+
+.buttons #aboutButton {
+    background-color: whitesmoke;
+    color: #E1A153;
+    border: 1px solid #E1A153;
+}
+
+/* Compétences certifiées */
+.skills {
+    width: 60%;
+    display: flex;
+    margin: 60px auto;
+    justify-content: space-between;
+    align-items: center;
+    filter: grayscale(1);
+    opacity: 0.7;
+}
+
+.skills .otherLogo {
+    height: 100px;
+}
+
+.skills #angularLogo {
+    height: 40px;
+}
+
+/* Musique d'accueil */
+.music {
+    width: 60%;
+    margin: 10px auto;
+}
+
+.music audio {
+    width: 100%;
+    filter: sepia(20%) saturate(0.7) grayscale(1) contrast(1) invert(12%);
+    height: 25px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 1360px) {
+
+    .container{
+        width: 100%;
+    }
+    
+    .welcome h1 {
+        font-size: 50px;
+    }
+
+    .description h3 {
+        font-size: 25px;
+    }
+
+    .buttons {
+        /* flex-direction: column; */
+        text-align: center;
+    }
+
+    .buttons a {
+        font-size: 20px;
+        height: 70px;
+        width: 250px;
+        margin: 15px;
+    }
+
+    .skills {
+        flex-wrap: wrap;
+        margin: 0 auto;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .skills .otherLogo {
+        height: 80px;
+        margin: 15px;
+    }
+    
+    .skills #angularLogo {
+        height: 32px;
+        margin: 15px;
+    }
+}

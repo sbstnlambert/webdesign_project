@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/contact.css">
+
+    <title>Java Dev - Sébastien Lambert</title>
+</head>
+
+<body>
+
+    <!-- Ancrage de haut de page -->
+    <a id="upPage"></a>
+
+    <header>
+
+        <nav class="navBar">
+
+            <a href="../index.html" class="brandTitle">
+                <img src="../img/logo-white/logo_small.png" alt="">
+            </a>
+
+            <a href="#" class="toggleButton">
+
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+
+            </a>
+
+            <div class="navBarLinks">
+
+                <ul>
+
+                    <li><a href="../index.html">Accueil</a></li>
+
+                    <li id="dropDown"><a href="about.html">A propos &ensp;</a>
+
+                        <ul id="subDropdown">
+                            <li><a href="about/about-story.html">Mon histoire</a></li>
+                            <li><a href="about/about-cv.html">Mon CV</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li><a href="project.html">Projets</a></li>
+                    <li><a class="current" href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- Formulaire -->
+
+    <div class="container">
+
+        <div class="myForm">
+
+            <h1>Comment puis-je vous aider ?</h1>
+
+            <form action="confirm.html" method="post">
+
+                <div>
+                    <label for="name" required>Nom <span class="warning">*</span> : </label>
+                    <input type="text" id="name" name="user_name">
+                </div>
+
+                <div>
+                    <label for="surname" required>Prénom <span class="warning">*</span> : </label>
+                    <input type="text" id="surname" name="user_surname">
+                </div>
+
+                <div>
+                    <label for="mail" required>E-mail <span class="warning">*</span> : </label>
+                    <input type="email" id="mail" name="user_mail">
+                </div>
+
+                <div>
+                    <label for="msg" required>Message <span class="warning">*</span> : </label>
+                    <textarea name="user_message" id="message" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="buttons">
+                    <button type="submit">Envoyer le message</button>
+                </div>
+
+            </form>
+
+            <!-- Vidéo de bienvenue -->
+
+            <div id="video">
+                <video controls>
+                    <source src="../video/welcome.mp4" type="video/mp4">
+                    Votre lecteur ne peut lire ce fichier vidéo.
+                </video>
+            </div>
+
+            <!-- Icônes de contact -->
+
+            <h1>Restons en contact.</h1>
+
+            <div id="icons">
+                <ul id="iconsItems">
+                    <li>
+                        <a href="https://goo.gl/maps/dFiqYB8GNq1j1Txk7" target="_blank">
+                            <img src="../img/icon-location.png" alt="Icone de localisation">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/s%C3%A9bastien-lambert/" target="_blank">
+                            <img src="../img/icon-linkedin.png" alt="Icone de LinkedIn">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:sbstnlambert@gmail.com">
+                            <img src="../img/icon-mail.png" alt="Icone d'un e-mail">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+32484295931">
+                            <img src="../img/icon-whatsapp.png" alt="Icone de WhatsApp">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://discord.com/" target="_blank">
+                            <img src="../img/icon-discord.png" alt="Icone de Discord">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://fr-fr.facebook.com/sbstn.lambert" target="_blank">
+                            <img src="../img/icon-facebook.png" alt="Icone de Facebook">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="picture">
+
+            <img src="../img/contactme-cropped2.jpg" alt="Photo d'une personne sur son téléphone">
+
+        </div>
+
+
+
+    </div>
+
+    <!-- Retour en haut de page -->
+    <footer>
+
+        <a href="#upPage">Haut de page</a>
+
+    </footer>
+
+</body>
+
+<script src="../js/script.js"></script>
+
+</html>

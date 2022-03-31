@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <title>Java Dev - Sébastien Lambert</title>
+</head>
+<body>
+
+    <!-- Ancrage de haut de page -->
+    <a id="upPage"></a>
+
+    <!-- EN-TÊTE -->
+    <header>
+
+        <!-- Barre de navigation (bannière) -->
+        <nav class="navBar">
+
+            <a href="index.html" class="brandTitle">
+                <img src="img/logo-white/logo_small.png" alt="Logo de Sébastien Lambert">
+            </a>
+            
+            <!-- Menu hamburger (responsive)-->
+            <a href="#" class="toggleButton">
+                
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+
+            </a>
+
+            <!-- Items de navigation (onglets)  -->
+            <div class="navBarLinks">
+
+                <ul>
+                    <li><a class="current" href="index.html">Accueil</a></li>
+
+                    <li id="dropDown"><a href="pages/about.html">A propos &ensp;</a>
+
+                        <ul id="subDropdown">
+                            <li><a href="pages/about/about-story.html">Mon histoire</a></li>
+                            <li><a href="pages/about/about-cv.html">Mon CV</a></li>
+                        </ul>
+                    
+                    </li>
+
+                    <li><a href="pages/project.html">Projets</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- PAGE D'ACCUEIL -->
+    <main>
+
+        <div class="container">
+
+            <!-- Texte d'accueil -->
+            <div class="welcome">
+
+                <h1>Bonjour,<br> Je suis <span id="sebastienFont">Sébastien</span></h1>
+
+            </div>
+
+            <div class="description">
+
+                <h3>Développeur <span id="highlight">Java / Angular</span> responsable de la conception et de la maintenance d’applications déployées en interne ou sur le Cloud.</h3>
+
+            </div>
+
+            <!-- Boutons (Call-to-action) -->
+            <div class="buttons">
+
+                <a href="pages/contact.html" id="contactButton">Contactez-moi</a>
+                <a href="pages/about.html" id="aboutButton">A propos</a>
+
+            </div>
+
+            <!-- Compétences certifiées -->
+            <div class="skills">
+
+                <img src="img/java-logo.png" alt="Java" class="otherLogo">
+                <img src="img/angular-logo.png" alt="Angular" id="angularLogo">
+                <img src="img/technifutur-logo.png" alt="Technifutur" class="otherLogo">
+
+            </div>
+
+            <!-- Musique d'accueil -->
+            <div class="music">
+                <audio controls>
+                    <source src="audio/perception.oga" type="audio/ogg">
+                    Votre lecteur ne peut lire ce fichier audio.
+                </audio>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Retour en haut de page -->
+    <footer>
+
+        <a href="#upPage">Haut de page</a>
+
+    </footer>
+
+</body>
+
+<script src="./js/script.js"></script>
+
+</html>

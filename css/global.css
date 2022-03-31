@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    margin: 50px auto;
+}
+
+footer a {
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+}
